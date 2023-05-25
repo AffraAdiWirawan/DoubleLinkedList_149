@@ -131,3 +131,7 @@ void DoubleLinkedList::revtraverse() {
 		currentNode = currentNode->prev;
 	}
 }
+
+void DoubleLinkedList::hapus() {
+	
+}
