@@ -133,5 +133,19 @@ void DoubleLinkedList::revtraverse() {
 }
 
 void DoubleLinkedList::hapus() {
-	
+	if (listEmpety()) {
+		cout << "\nList is empty" << endl;
+	}
+	node* prev, * curr;
+	prev = curr = NULL;
+	cout << "\nEnter the roll number of the student whose record you want to search :";
+	int num;
+	cin >> num;
+	if (DoubleLinkedList::search(num, &prev, &curr) == false)
+		cout << "\nRecord not found" << endl;
+	else {
+		cout << "\nRecord Found" << endl;
+		cout << "\nRoll number : " << curr->noMhs << endl;
+		cout << "\nName : " << curr->name << endl;
+	}
 }
