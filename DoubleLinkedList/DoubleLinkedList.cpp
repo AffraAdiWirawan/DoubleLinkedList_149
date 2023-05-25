@@ -105,5 +105,14 @@ bool DoubleLinkedList::listEmpety() {
 }
 
 void DoubleLinkedList::traverse() {
-
+	if (listEmpety())
+		cout << "\nList is empty" << endl;
+	else {
+		cout << "\n in ascending of roll number are : " << endl;
+		node* currentNode = START;
+		while (currentNode != NULL) {
+			cout << currentNode->noMhs << " " << currentNode->name << endl;
+			currentNode = currentNode->next;
+		}
+	}
 }
