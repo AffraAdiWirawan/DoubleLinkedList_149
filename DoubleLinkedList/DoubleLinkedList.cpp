@@ -10,3 +10,7 @@ public:
 	node* next;
 	node* prev;
 };
+
+class DoubleLinkedList {
+
+};
