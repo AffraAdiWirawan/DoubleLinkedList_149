@@ -103,3 +103,7 @@ bool DoubleLinkedList::deleteNode(int rollNo) {
 bool DoubleLinkedList::listEmpety() {
 	return (START == NULL);
 }
+
+void DoubleLinkedList::traverse() {
+
+}
